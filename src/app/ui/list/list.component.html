@@ -1,0 +1,7 @@
+<app-list-detail *ngFor="let list of userList" [list]="list"></app-list-detail>
+<form (ngSubmit)="createList()">
+    <label for="name" class="text-write">Name</label>
+    <input type="text" id="name" name="name" class="form-control" [(ngModel)]="name">
+    <label for="name" class="text-write">Description</label>
+    <input type="text" id="description" name="description" class="form-control" [(ngModel)]="description">
+</form>
